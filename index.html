@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming Site</title>
+  
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  
+  <style>
+  
+  .header {
+    width: 100%;
+    height: 100px;
+    border-radius: 0 0 50px 50px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-color: #0171f9;
+    
+  }
+  
+  .header1 {
+    width: 1400px;
+    height: 100px;
+    border-radius: 0 0 50px 50px;
+    position: relative;
+    top: 0px;
+    margin: auto;
+    z-index: 0;
+  }
+  
+  .header img.logo {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+  }
+  
+ 
+  .header1 navbar {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+  }
+  
+  .header1 navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header1 ul li {
+    padding: 8px;
+  }
+  
+  .header1 li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 28px;
+    border-radius: 25px;
+  }
+  .header li a.link {
+    color: white;
+    background-color: rgb(238, 98, 107);
+  }
+  
+.banner {
+  position: relative;
+  top: 0px;
+  background-image: url(./banner-bg.jpg);
+  width: 100vw;
+  height: 960px;
+  background-size: cover;
+  background-position: top;
+  border-radius: 0 0 150px 150px;
+}
+.lugxtext {
+  color: white;
+  position: relative;
+  top: 200px;
+  margin: auto;
+  width: 1250px;
+  height: 550px;
+}
+
+.lugxtext div.text1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+}
+
+.lugxtext h1.text2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  position: absolute;
+  top: 120px;
+}
+
+.lugxtext img.underline {
+  position: absolute;
+  top: 200px;
+  left: 122px;
+}
+
+.lugxtext p.para {
+  line-height: 30px;
+  position: absolute;
+  top: 230px;
+}
+
+form input[type="text3"] {
+  position: absolute;
+  top: 400px;
+  width: 310px;
+  padding: 20px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+}
+
+form input[type="submit"] {
+  position: absolute;
+  top: 400px;
+  left: 300px;
+  width: 200px;
+  padding: 20.5px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(238, 98, 107);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lugxphoto {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 410px;
+  height: 500px;
+}
+
+.lugxphoto img {
+  position: absolute;
+  border-radius: 25px;
+  top: 0px;
+  left: 0px;
+}
+
+.lugxphoto span.price {
+  position: absolute;
+  color: white;
+  background-color: rgb(0, 138, 248);
+  top: 20px;
+  right: 20px;
+  border-radius: 25px;
+  padding: 5px 13px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.lugxphoto .discount {
+  position: absolute;
+  background-color: rgb(238, 98, 107);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  bottom: -20px;
+  left: -20px;
+}
+
+.lugxphoto div span {
+  position: absolute;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  text-align: center;
+  bottom: 35px;
+  left: 15px;
+}
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  top: -100px;
+  margin: auto;
+  width: 1250px;
+  height: 240px;
+}
+
+.feat {
+  text-align: center;
+  border-radius: 25px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  text-align: center;
+}
+
+.border {
+  background-color: rgb(0, 138, 248);
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.border img {
+  margin-top: 22px;
+  width: 44px;
+  height: 44px;
+}
+
+.border:hover {
+  background-color: rgb(238, 98, 107);
+}
+
+.feat h4 {
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+.container {
+  position: relative;
+  width: 1250px;
+  height: 120px;
+  margin: auto;
+}
+
+span.trend {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: rgb(238, 98, 107);
+  font-weight: bold;
+}
+
+span.view {
+  position: absolute;
+  color: white;
+  background-color: rgb(238, 98, 107);
+  border-radius: 50px;
+  padding: 20px;
+  font-weight: bolder;
+  top: 50px;
+  right: 0px;
+  cursor: pointer;
+}
+
+span.view:hover {
+  background-color: rgb(0, 138, 248);
+}
+
+h3.trending {
+  position: relative;
+  left: 0px;
+  top: 50px;
+  color: black;
+  font-size: 40px;
+  display: inline;
+}
+.trending {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  flex-wrap: nowrap;
+  gap: 25px;
+  top: 100px;
+  width: 1250px;
+  height: 345px;
+}
+
+.box {
+  position: relative;
+  text-align: center;
+  border-radius: 25px;
+  width: 290px;
+  height: 340px;
+  background-color: rgb(241, 241, 241);
+}
+
+.box img {
+  background-color: rgb(0, 138, 248);
+  border-radius: 25px;
+  width: 290px;
+  height: 220px;
+  transition-timing-function: ease-in-out;
+  transition: 1s;
+}
+
+.box img:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 20.2);
+}
+
+.box span.price2 {
+  position: absolute;
+  background-color: rgb(0, 138, 248);
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 15px;
+  right: 20px;
+  top: 20px;
+  line-height: 20px;
+}
+
+.box div.action {
+  color: rgb(117, 101, 101);
+  position: absolute;
+  left: 30px;
+  bottom: 60px;
+}
+
+.box div.assasin {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.box div.assasin:hover {
+  color: rgb(0, 138, 248);
+  cursor: pointer;
+}
+
+.box div.icon {
+  background-color: rgb(238, 98, 107);
+}
+
+span.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: white;
+  background-color: rgb(238, 98, 107);
+  border-radius: 50px;
+  padding: 7px;
+}
+span.tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgb(238, 98, 107);
+  color: white;
+  font-weight: bolder;
+  border-radius: 15px;
+  padding: 5px 0px;
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+span.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  transform: rotate(180deg);
+  border-color: rgb(238, 98, 107) transparent transparent transparent;
+}
+
+span.material-symbols-outlined:hover .tooltiptext {
+  visibility: visible;
+}
+
+span.material-symbols-outlined:hover {
+  background-color: rgb(0, 138, 248);
+  cursor: pointer;
+}
+
+.most-played {
+  background-color: rgb(241, 241, 241);
+  position: relative;
+  top: 250px;
+  width: 100%;
+  height: 740px;
+  border-radius: 150px;
+}
+
+.cont {
+  position: relative;
+  top: 110px;
+  margin: auto;
+  width: 1250px;
+  height: 100px;
+}
+
+.cont span.topg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: rgb(238, 98, 107);
+  font-weight: bold;
+}
+
+.cont span.view2 {
+  color: white;
+  background-color: rgb(238, 98, 107);
+  display: inline;
+  position: absolute;
+  border-radius: 50px;
+  padding: 20px 25px;
+  font-weight: bolder;
+  right: 0px;
+  bottom: 0px;
+}
+
+.cont span.view2:hover {
+  background-color: rgb(0, 138, 248);
+  cursor: pointer;
+}
+
+.cont h3.mostp {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  color: black;
+  font-size: 40px;
+}
+
+.contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 200px;
+  margin: auto;
+  gap: 20px;
+  flex-wrap: nowrap;
+  width: 1250px;
+  height: 330px;
+}
+
+.most {
+  background-color: white;
+  text-align: center;
+  border-radius: 25px;
+  width: 290px;
+  height: 320px;
+  box-shadow: 1px 1px 5px rgb(206, 202, 202);
+}
+
+.most img {
+  background-color: rgb(0, 138, 248);
+  border-radius: 25px;
+  opacity: 1;
+}
+.most img:hover {
+  opacity: 0.85;
+}
+
+.most div.action2 {
+  color: black;
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+}
+
+.most .assasin2 {
+  color: black;
+  font-weight: bolder;
+  position: relative;
+  font-size: 1.3rem;
+  top: 30px;
+}
+
+.most span.explore {
+  color: white;
+  background-color: rgb(238, 98, 107);
+  display: inline-block;
+  border-radius: 50px;
+  padding: 15px;
+  font-weight: bolder;
+  position: relative;
+  top: 50px;
+}
+
+.most span.explore:hover {
+  background-color: rgb(0, 138, 248);
+  cursor: pointer;
+}
+.categ-container {
+  width: 100%;
+  height: 150px;
+  margin: auto;
+  position: relative;
+  top: 300px;
+}
+
+.category {
+  position: relative;
+  top: 0px;
+  margin: auto;
+  color: rgb(238, 98, 107);
+  font-weight: bold;
+  text-align: center;
+}
+
+h1.top-category {
+  position: relative;
+  top: 0px;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  position: relative;
+  top: 330px;
+  margin: auto;
+  flex-wrap: nowrap;
+  width: 1250px;
+  height: 300px;
+}
+
+.cards {
+  text-align: center;
+  border-radius: 25px;
+  width: 235px;
+  height: 300px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 138, 248);
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.cards h4 {
+  color: white;
+  font-weight: bold;
+  padding: 13px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.cards img {
+  background-color: rgb(0, 138, 248);
+  border-radius: 25px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 230px;
+  height: 220px;
+  opacity: 0.9;
+}
+.cards img:hover {
+  opacity: 1;
+}
+
+.bottom {
+  text-align: center;
+  width: 1250px;
+  height: 700px;
+  position: relative;
+  top: 450px;
+  margin: auto;
+}
+
+.bottom1 {
+  background-color: rgb(241, 241, 241);
+  width: 500px;
+  height: 620px;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  border-radius: 25px;
+  font-weight: bolder;
+}
+
+.bottom1 span.b1 {
+  color: rgb(238, 98, 107);
+  position: absolute;
+  top: 75px;
+  left: 80px;
+  font-weight: bold;
+}
+
+.bottom1 h1.b2 {
+  color: black;
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 2.2rem;
+}
+
+.bottom1 p.b3 {
+  color: black;
+  position: absolute;
+  top: 320px;
+  left: 85px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+
+.bottom1 span.b4 {
+  color: white;
+  background-color: rgb(238, 98, 107);
+  position: absolute;
+  top: 470px;
+  left: 80px;
+  text-align: left;
+  border-radius: 35px;
+  padding: 18px 32px;
+}
+
+.bottom1 span.b4:hover {
+  cursor: pointer;
+  background-color: rgb(0, 138, 248);
+}
+
+.bottom2 {
+  background-color: rgb(241, 241, 241);
+  width: 500px;
+  height: 480px;
+  position: absolute;
+  top: 220px;
+  right: 0px;
+  border-radius: 25px;
+}
+
+.bottom2 span.b1 {
+  color: rgb(238, 98, 107);
+  position: absolute;
+  top: 75px;
+  left: 80px;
+  font-weight: bold;
+}
+
+.bottom2 h1.b2 {
+  color: black;
+  position: absolute;
+  top: 110px;
+  left: 80px;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 2.2rem;
+}
+
+.bottom2 input {
+  border: none;
+  padding: 20px;
+  width: 170px;
+  border-radius: 35px;
+  position: absolute;
+  top: 360px;
+  left: 80px;
+  text-align: left;
+  outline: none;
+}
+
+.bottom2 span.b3 {
+  color: white;
+  background-color: rgb(238, 98, 107);
+  position: absolute;
+  top: 360px;
+  left: 250px;
+  text-align: left;
+  border-radius: 35px;
+  padding: 18px 42px;
+}
+
+.bottom2 span.b3:hover {
+  cursor: pointer;
+  background-color: rgb(0, 138, 248);
+}
+
+
+
+
+
+footer {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  top: 550px;
+  background-image: url(./banner-bg.jpg);
+  background-size: cover;
+  border-radius: 150px 150px 0 0;
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 1.2rem;
+}
+
+
+    
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header1">
+      <img class="logo" src="./logo.png"/>
+      
+      <navbar>
+        <ul>
+          <li>
+            <a href="#home" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#shop">Our Shop</a>
+          </li>
+          <li>
+            <a href="#product">Product Details</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+          <li>
+            <a class="link" href="">SIGN IN</a>
+          </li>
+        </ul>
+      </navbar>
+    </div>
+  </div>
+  <div class="banner" id="home">
+    <div class="lugxtext">
+      <div class="text1">WELCOME TO LUGX</div>
+      <h1 class="text2">BEST GAMING SITE EVER!</h1>
+      <img class="underline" src="./caption-dec.png"/>
+      <p class="para">
+        LUGX gaming is free Bootstrap 5 HTML CSS website template for your
+        gaming websites. You<br />
+        can download and use this layout for commercial purposes. Please tell
+        your friends about<br />
+        TemplateMo.
+      </p>
+      <form>
+        <input type="text3" placeholder="Type Something" />
+        <input type="submit" value="SEARCH" />
+      </form>
+                   
+      <div class="lugxphoto">
+        <img src="./banner-image.jpg"/>
+        <span class="price">$22</span>
+        <div class="discount">
+          <span>- 40%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="feat">
+      <div class="border">
+        <img src="./featured-01.png" alt="benefits" />
+      </div>
+      <h4>FREE STORAGE</h4>
+    </div>
+    <div class="feat">
+      <div class="border">
+        <img src="./featured-02.png" alt="benefits" />
+      </div>
+      <h4>USER MORE</h4>
+    </div>
+    <div class="feat">
+      <div class="border">
+        <img src="./featured-03.png" alt="benefits" />
+      </div>
+      <h4>REPLY READY</h4>
+    </div>
+    <div class="feat">
+      <div class="border">
+        <img src="./featured-04.png" alt="benefits" style="width: 50px; height: 50px" />
+      </div>
+      <h4>EASY LAYOUT</h4>
+    </div>
+  </div>
+  <div class="container" id="shop">
+    <span class="trend">TRENDING</span> <span class="view">VIEW ALL</span>
+    <h3 class="trending">Trending Games</h3>
+  </div>
+  <div class="trending">
+    <div class="box">
+      <img src="./trending-01.jpg" alt="benefits" />
+      <span class="price2"><span style="text-decoration: line-through">$28</span><br />
+        $20</span>
+      <div class="action">Action</div>
+      <div class="assasin">Assasin Creed</div>
+      <span class="material-symbols-outlined">shopping_bag <span class="tooltiptext">Buy now</span>
+      </span>
+    </div>
+    <div class="box">
+      <img src="./trending-02.jpg" alt="benefits" />
+      <span class="price2">$44</span>
+      <div class="action">Action</div>
+      <div class="assasin">Assasin Creed</div>
+      <span class="material-symbols-outlined">shopping_bag <span class="tooltiptext">Buy now</span></span>
+    </div>
+    <div class="box">
+      <img src="./trending-03.jpg" alt="benefits" />
+      <span class="price2"><span style="text-decoration: line-through">$64</span><br />
+        $44</span>
+      <div class="action">Action</div>
+      <div class="assasin">Assasin Creed</div>
+      <span class="material-symbols-outlined">shopping_bag <span class="tooltiptext">Buy now</span></span>
+    </div>
+    <div class="box">
+      <img src="./trending-04.jpg" alt="benefits" />
+      <span class="price2">$44</span>
+      <div class="action">Action</div>
+      <div class="assasin">Assasin Creed</div>
+      <span class="material-symbols-outlined">shopping_bag <span class="tooltiptext">Buy now</span></span>
+    </div>
+  </div>
+  <div class="most-played" id="product">
+    <div class="cont">
+      <span class="topg">TOP GAMES</span> <span class="view2">VIEW ALL</span>
+      <h3 class="mostp">Most Played</h3>
+    </div>
+    <div class="contain">
+      <div class="most">
+        <img src="./top-game-01.jpg" alt="benefits" />
+        <div class="action2">Adventure</div>
+        <div class="assasin2">Assasin Creed</div>
+        <span class="explore">EXPLORE</span>
+      </div>
+      <div class="most">
+        <img src="./top-game-02.jpg" alt="benefits" />
+        <div class="action2">War - PUBG</div>
+        <div class="assasin2">Battlegrounds</div>
+        <span class="explore">EXPLORE</span>
+      </div>
+      <div class="most">
+        <img src="./top-game-03.jpg" alt="benefits" />
+        <div class="action2">Simulation</div>
+        <div class="assasin2">Apex Legends</div>
+        <span class="explore">EXPLORE</span>
+      </div>
+      <div class="most">
+        <img src="./top-game-04.jpg" alt="benefits" />
+        <div class="action2">Arcade</div>
+        <div class="assasin2">The Sims4</div>
+        <span class="explore">EXPLORE</span>
+      </div>
+      <div class="most">
+        <img src="./top-game-05.jpg" alt="benefits" />
+        <div class="action2">Fighting</div>
+        <div class="assasin2">LosTark</div>
+        <span class="explore">EXPLORE</span>
+      </div>
+      <div class="most">
+        <img src="./top-game-06.jpg" alt="benefits" />
+        <div class="action2">Shooting</div>
+        <div class="assasin2">Destiny 2</div>
+        <span class="explore">EXPLORE</span>
+      </div>
+    </div>
+  </div>
+  <div class="categ-container">
+    <div class="category">CATEGORIES</div>
+    <h1 class="top-category">Top Categories</h1>
+  </div>
+  <div class="card-container">
+    <div class="cards">
+      <h4 class="action1">Adventure</h4>
+      <img src="./categories-01.jpg" alt="benefits" />
+    </div>
+    <div class="cards">
+      <h4 class="action1">Action</h4>
+      <img src="./categories-05.jpg" alt="benefits" />
+    </div>
+    <div class="cards">
+      <h4 class="action1">Simulation</h4>
+      <img src="./categories-03.jpg" alt="benefits" />
+    </div>
+    <div class="cards">
+      <h4 class="action1">Shooting</h4>
+      <img src="./categories-04.jpg" alt="benefits" />
+    </div>
+    <div class="cards">
+      <h4 class="action1">War</h4>
+      <img src="./categories-05.jpg" alt="benefits" />
+    </div>
+  </div>
+  <div class="bottom">
+    <img src="./cta-bg.jpg" alt="bottom img" style="border-radius: 25px" />
+    <div class="bottom1" id="contact">
+      <span class="b1">OUR SHOP</span>
+      <h1 class="b2">
+        Go Pre-Order<br />
+        Buy & Get<br />
+        Best
+        <span style="color: rgb(0, 138, 248); display: inline">Prices</span><br />For You!
+      </h1>
+      <p class="b3">
+        Lorem ipsum dolor consectetur<br />
+        adipiscing, sed do eiusmod tempor<br />
+        incididunt.
+      </p>
+      <span class="b4">SHOP NOW</span>
+    </div>
+    <div class="bottom2">
+      <span class="b1">NEWSLETTER</span>
+      <h1 class="b2">
+        Get Up To $100 Off<br />
+        Just Buy
+        <span style="color: rgb(0, 138, 248); display: inline">Subscribe</span><br />Newsletter!
+      </h1>
+      <input type="email" placeholder="Your email..." />
+      <span class="b3">SUBSCRIBE</span>
+    </div>
+  </div>
+  <footer>
+    <p>
+      Copyright © 2048 LUGX Gaming Company. All rights reserved. Design:
+      TemplateMo
+    </p>
+  </footer>
+</body>
+
+</html>
